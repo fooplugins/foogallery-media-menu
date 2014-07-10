@@ -26,7 +26,7 @@ if ( !class_exists( 'FooGallery_Media_Menu_Extension' ) ) {
 
 		function __construct() {
 			add_filter( 'foogallery_gallery_posttype_register_args', array($this, 'remove_posttype_menus') );
-			add_filter( 'foogallery_menu_parent_slug', array($this, 'change_menu_parent_slug') );
+			add_filter( 'foogallery_admin_menu_parent_slug', array($this, 'change_menu_parent_slug') );
 			add_action( 'foogallery_admin_menu_before', array($this, 'create_menus') );
 			//add_filter( 'foogallery_extensions_activate_success-media_menu', array($this, 'override_activation_success_message') );
 			add_filter( 'foogallery_extensions_redirect_url-media_menu', array($this, 'override_redirection_url'), 10, 2 );
