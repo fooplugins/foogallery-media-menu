@@ -47,7 +47,7 @@ if ( !class_exists( 'FooGallery_Media_Menu_Extension' ) ) {
 			add_media_page( __( 'Add Gallery', 'foogallery' ), __( 'Add Gallery', 'foogallery' ), 'upload_files', 'post-new.php?post_type=' . FOOGALLERY_CPT_GALLERY );
 			$api = new FooGallery_Extensions_API();
 			if ( $api->is_active( 'albums' ) ) {
-				add_media_page( __( 'Albums', 'foogallery' ), __( 'Albums', 'foogallery' ), 'upload_files', 'edit-tags.php?taxonomy=' . FOOGALLERY_TAX_ALBUM );
+				add_media_page( __( 'Albums', 'foogallery' ), __( 'Albums', 'foogallery' ), 'upload_files', 'edit.php?post_type=' . FOOGALLERY_CPT_ALBUM );
 			}
 		}
 
