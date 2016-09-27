@@ -13,7 +13,7 @@
  * @wordpress-plugin
  * Plugin Name: FooGallery - Media Menu Extension
  * Description: Move the FooGallery menu items under the Media Menu
- * Version:     1.0.1
+ * Version:     1.0.2
  * Author:      bradvin
  * Author URI:  http://fooplugins.com
  * License:     GPL-2.0+
@@ -82,7 +82,11 @@ if ( !class_exists( 'FooGallery_Media_Menu_Extension' ) ) {
 				array(
 					'page_title' => __( 'FooGallery Help', 'foogallery' ),
 					'menu_title' => __( 'Gallery Help', 'foogallery' )
-				)
+				),
+				array(
+					'page_title' => __( 'FooGallery System Information', 'foogallery' ),
+					'menu_title' => __( 'Gallery System Info', 'foogallery' ),
+				),
 			);
 		}
 	}
